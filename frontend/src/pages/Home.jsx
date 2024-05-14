@@ -47,7 +47,9 @@ export default function Home() {
         </button>
       </div>
       <div className="flex justify-between items-center">
-        <h1 className="text-3xl my-8">Books List</h1>
+        <h1 className="text-3xl font-bold my-8 bg-red-300 rounded-xl p-2 border-4 border-black">
+          Books List
+        </h1>
         <Link to="/books/create">
           <MdOutlineAddBox className="text-sky-800 text-4xl" />
         </Link>

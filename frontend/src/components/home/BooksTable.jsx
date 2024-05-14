@@ -8,7 +8,7 @@ export default function BooksTable({ books }) {
   return (
     <table className="w-full border-separate border-spacing-2">
       <thead>
-        <tr>
+        <tr className="bg-red-200">
           <th className="border border-slate-600 rounded-md">No</th>
           <th className="border border-slate-600 rounded-md">Title</th>
           <th className="border border-slate-600 rounded-md max-md:hidden">
@@ -22,7 +22,12 @@ export default function BooksTable({ books }) {
       </thead>
       <tbody>
         {books.map((book, index) => (
-          <tr key={book._id} className="h-8">
+          <tr
+            key={book._id}
+            className={`h-8 ${
+              index % 2 === 0 ? "bg-blue-100" : "bg-green-100"
+            }`}
+          >
             <td className="border border-slate-700 rounded-md text-center">
               {index + 1}
             </td>
