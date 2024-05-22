@@ -48,7 +48,7 @@ export default function CreateBook() {
         Create Book
       </h1>
       {loading ? <Spinner /> : ""}
-      <div className="flex flex-col border-4 border-violet-400 rounded-xl w-[600px] p-4 mx-auto mt-4">
+      <div className="flex flex-col border-4 border-violet-400 rounded-xl w-[600px] p-4 mx-auto ">
         <div className="my-4">
           <label className="text-xl mr-4 text-gray-700 font-medium">
             Title
